@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>MusicPlayerService</Title>
+    <Authors>Phlegmatic</Authors>
+    <Description>Music player service implementation</Description>
+    <PackageProjectUrl>https://github.com/PhlegmaticOne/PhlegmaticOne.MusicPlayerService</PackageProjectUrl>
+    <PackageIcon>Logo - Copy.png</PackageIcon>
+    <RepositoryUrl>https://github.com/PhlegmaticOne/PhlegmaticOne.MusicPlayerService.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Music;Player;Service;MusicPlayer;PlayerService;</PackageTags>
+    <PackageReleaseNotes>Added music player service implementation</PackageReleaseNotes>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\Downloads\Logo - Copy.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+    <PackageReference Include="PhlegmaticOne.MusicPlayers" Version="1.0.2" />
+  </ItemGroup>
+
+</Project>

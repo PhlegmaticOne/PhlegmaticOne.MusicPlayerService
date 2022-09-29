@@ -114,5 +114,5 @@ internal class PlayerService<T> : IPlayerService<T> where T : class, IHaveUrl
     private void InvokeOnQueueChanged(IEnumerable<T> entities, PlayerQueueChangedType collectionChangedType) =>
         EntitiesChanged?.Invoke(this, new PlayerQueueChangedEventArgs<T>(entities, collectionChangedType));
     private void InvokeOnEntityChanged() => CurrentEntityChanged?.Invoke(this, _currentEntity);
-    private void PlayerOnSongEnded(object? sender, EventArgs e) => MoveNext(QueueMoveType.AccordingToRepeatType);
+    private void PlayerOnSongEnded(object? sender, string e) => MoveNext(QueueMoveType.AccordingToRepeatType);
 }

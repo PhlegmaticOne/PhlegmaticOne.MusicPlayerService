@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhlegmaticOne.MusicPlayerService", "PhlegmaticOne.MusicPlayerService\PhlegmaticOne.MusicPlayerService.csproj", "{6FB6485A-1764-4825-B7DC-822306A667CE}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C1CA9A73-24DA-4A6F-8EC5-E65E79B805AC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample", "Sample", "{8B6AD995-D07E-44F1-AA19-B546E2A2CECA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhlegmaticOne.MusicPlayers", "..\PhlegmaticOne.MusicPlayers\src\PhlegmaticOne.MusicPlayers\PhlegmaticOne.MusicPlayers.csproj", "{C70FBDC7-08FC-4226-929F-A3A4B1237DC5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +15,16 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6FB6485A-1764-4825-B7DC-822306A667CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6FB6485A-1764-4825-B7DC-822306A667CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6FB6485A-1764-4825-B7DC-822306A667CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6FB6485A-1764-4825-B7DC-822306A667CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C70FBDC7-08FC-4226-929F-A3A4B1237DC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C70FBDC7-08FC-4226-929F-A3A4B1237DC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C70FBDC7-08FC-4226-929F-A3A4B1237DC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C70FBDC7-08FC-4226-929F-A3A4B1237DC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C70FBDC7-08FC-4226-929F-A3A4B1237DC5} = {C1CA9A73-24DA-4A6F-8EC5-E65E79B805AC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D7BB26FC-01E5-4896-8DD1-CC92405EDA82}
